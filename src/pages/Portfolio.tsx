@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
-import "aos/dist/aos.css";
-import { FaReact, FaNodeJs, FaDatabase, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import 'aos/dist/aos.css';
+import { FaReact, FaNodeJs, FaDatabase, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter';
+import me from '../../public/images/me.png';
 
 export default function Portfolio() {
     useEffect(() => {
@@ -30,10 +32,12 @@ export default function Portfolio() {
     ];
 
     return (
-        <div className="min-h-screen bg-white text-gray-900 font-sans scroll-smooth">
+        <div className="min-h-screen bg-white text-gray-900 font-sans scroll-smooth font-inter">
             {/* Navbar */}
             <header className="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
-                <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-600">Sandeep Kumar</h1>
+                <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-600">
+                    Sandeep Kumar
+                </h1>
                 <nav className="space-x-6 hidden md:flex">
                     {["Home", "Projects", "Skills", "About", "Contact"].map((item) => (
                         <a
@@ -48,14 +52,42 @@ export default function Portfolio() {
             </header>
 
             {/* Hero Section */}
-            <section id="home" className="flex flex-col items-center justify-center text-center px-4 py-32" data-aos="fade-up">
-                <h2 className="text-5xl md:text-7xl font-bold mb-6">
-                    Hi, I'm <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">Sandeep</span>
-                </h2>
-                <p className="text-2xl md:text-3xl text-gray-600 mb-8">MERN Stack Developer | React & Node.js Enthusiast</p>
-                <a href="#projects" className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110 shadow-md">
-                    View My Work
-                </a>
+            <section id="home" className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-[100px] py-25 bg-gradient-to-br from-white via-cyan-50 to-white" data-aos="fade-up">
+                <div className="flex-1">
+                    <h2 className="text-5xl md:text-7xl font-bold mb-6">
+                        Hi, I'm <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">Sandeep</span>
+                    </h2>
+                    <p className="text-2xl md:text-3xl text-gray-600 mb-8">
+                        <Typewriter
+                            words={['MERN Stack Developer', 'React & Node.js Enthusiast', 'Web Performance Optimizer']}
+                            loop
+                            cursor
+                            cursorStyle="_"
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </p>
+                    <a href="#projects" className="bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110 shadow-lg">
+                        View My Work
+                    </a>
+                </div>
+                <div className="flex-1 flex justify-center">
+                    <div className="relative group w-80 h-80">
+                        <img
+                            src={me}
+                            alt="Sandeep Kumar"
+                            className="w-[100%] h-[100%] object-cover object-center rounded-full shadow-2xl border-[6px] border-white transition-transform duration-500 ease-in-out group-hover:scale-105"
+                            style={{
+                                imageRendering: 'auto',
+                                transform: 'translateZ(0)', // forces GPU rendering
+                                backfaceVisibility: 'hidden',
+                                WebkitTransform: 'translateZ(0)',
+                            }}
+                        />
+
+                    </div>
+                </div>
             </section>
 
             {/* Skills Section */}
@@ -80,7 +112,7 @@ export default function Portfolio() {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300"
+                            className="border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white/70 backdrop-blur-md"
                             data-aos="fade-up"
                         >
                             <div className="text-5xl text-teal-500 text-center mb-4">{project.icon}</div>
