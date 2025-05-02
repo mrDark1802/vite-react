@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaReact, FaNodeJs, FaDatabase, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
-import me from '../../public/images/me.png';
+import me from '/public/images/me.png';
 
 export default function Portfolio() {
     useEffect(() => {
@@ -32,7 +32,7 @@ export default function Portfolio() {
     ];
 
     return (
-        <div className="min-h-screen bg-white text-gray-900 font-sans scroll-smooth font-inter">
+        <div className="min-h-screen bg-white text-gray-900 font-sans scroll-smooth font-inter overflow-hidden">
             {/* Navbar */}
             <header className="flex justify-between items-center px-6 py-4 bg-white shadow-md sticky top-0 z-50">
                 <h1 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-600">
@@ -73,21 +73,21 @@ export default function Portfolio() {
                     </a>
                 </div>
                 <div className="flex-1 flex justify-center">
-                    <div className="relative group w-80 h-80">
+                    <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl border-[6px] border-white">
                         <img
-                            src={me}
+                            src="/images/me.png"
                             alt="Sandeep Kumar"
-                            className="w-[100%] h-[100%] object-cover object-center rounded-full shadow-2xl border-[6px] border-white transition-transform duration-500 ease-in-out group-hover:scale-105"
+                            className="w-full h-full object-cover object-center scale-130 transition-transform duration-500 ease-in-out"
                             style={{
                                 imageRendering: 'auto',
-                                transform: 'translateZ(0)', // forces GPU rendering
+                                transform: 'translateZ(0)',
                                 backfaceVisibility: 'hidden',
                                 WebkitTransform: 'translateZ(0)',
                             }}
                         />
-
                     </div>
                 </div>
+
             </section>
 
             {/* Skills Section */}
