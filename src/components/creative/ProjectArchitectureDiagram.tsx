@@ -12,16 +12,16 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
   switch (projectId) {
     case "noblai":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-              NOBLAI // STRIPE BILLING & PLAN MANAGEMENT
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <span className="truncate">NOBLAI // STRIPE BILLING & PLAN MANAGEMENT</span>
             </span>
-            <span className="text-amber-400/90 text-[10px]">RECURRING & ONE-TIME PAYMENTS</span>
+            <span className="text-amber-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">RECURRING & ONE-TIME PAYMENTS</span>
           </div>
 
-          <svg viewBox="0 0 600 240" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 240" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="gridNobl" width="20" height="20" patternUnits="userSpaceOnUse">
                 <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="1" />
@@ -83,25 +83,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             </circle>
           </svg>
 
-          <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Sole system for recurring revenue collection • Recurring plans & one-time payments</span>
-            <span className="text-amber-400 font-semibold">STRIPE INTEGRATION</span>
+          <div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Sole system for recurring revenue collection • Recurring plans & one-time payments</span>
+            <span className="text-amber-400 font-semibold shrink-0">STRIPE INTEGRATION</span>
           </div>
         </div>
       );
 
     case "online-marketplace":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-              ONLINE MARKETPLACE // MULTI-ROLE SECURITY & CHAT
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shrink-0" />
+              <span className="truncate">ONLINE MARKETPLACE // MULTI-ROLE SECURITY & CHAT</span>
             </span>
-            <span className="text-cyan-400/90 text-[10px]">ROLE-BASED AUTH & SOCKET.IO</span>
+            <span className="text-cyan-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">ROLE-BASED AUTH & SOCKET.IO</span>
           </div>
 
-          <svg viewBox="0 0 600 240" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 240" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(20, 30)">
               <rect width="115" height="50" rx="6" fill="#0f172a" stroke="#3b82f6" strokeWidth="1.5" />
               <text x="57" y="24" fill="#93c5fd" fontSize="9.5" textAnchor="middle" fontWeight="bold">CUSTOMER DASHBOARD</text>
@@ -154,25 +154,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             <path d="M 430 110 L 430 140" stroke="#10b981" strokeWidth="1.5" strokeDasharray="2 2" />
           </svg>
 
-          <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Distinct permission-scoped experience • Buyers & sellers communicate on-platform</span>
-            <span className="text-cyan-400 font-semibold">SECURITY & LIVE CHAT</span>
+          <div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Distinct permission-scoped experience • Buyers & sellers communicate on-platform</span>
+            <span className="text-cyan-400 font-semibold shrink-0">SECURITY & LIVE CHAT</span>
           </div>
         </div>
       );
 
     case "friendzone":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse" />
-              FRIENDZONE // REAL-TIME SOCIAL PLATFORM
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-violet-400 animate-pulse shrink-0" />
+              <span className="truncate">FRIENDZONE // REAL-TIME SOCIAL PLATFORM</span>
             </span>
-            <span className="text-violet-400/90 text-[10px]">SOCKET.IO CHAT & TRANSLATION</span>
+            <span className="text-violet-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">SOCKET.IO CHAT & TRANSLATION</span>
           </div>
 
-          <svg viewBox="0 0 600 220" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 220" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(30, 80)">
               <rect width="110" height="55" rx="8" fill="#0f172a" stroke="#8b5cf6" strokeWidth="1.5" />
               <text x="55" y="24" fill="#ddd6fe" fontSize="9.5" textAnchor="middle" fontWeight="bold">USER CLIENT</text>
@@ -212,25 +212,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             </circle>
           </svg>
 
-          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Real-time social platform with Socket.io chat, message translation, and authentication</span>
-            <span className="text-violet-400 font-semibold">SOCKET.IO & AUTH</span>
+          <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Real-time social platform with Socket.io chat, message translation, and authentication</span>
+            <span className="text-violet-400 font-semibold shrink-0">SOCKET.IO & AUTH</span>
           </div>
         </div>
       );
 
     case "extreme-performance":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-              EXTREME PERFORMANCE // REST APIS & ADMIN PANEL
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <span className="truncate">EXTREME PERFORMANCE // REST APIS & ADMIN PANEL</span>
             </span>
-            <span className="text-amber-400/90 text-[10px]">FAST FILTERED SEARCH</span>
+            <span className="text-amber-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">FAST FILTERED SEARCH</span>
           </div>
 
-          <svg viewBox="0 0 600 200" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 200" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(30, 70)">
               <rect width="125" height="55" rx="8" fill="#0f172a" stroke="#475569" strokeWidth="1.5" />
               <text x="62" y="24" fill="#f8fafc" fontSize="9.5" textAnchor="middle" fontWeight="bold">ADMIN DASHBOARD</text>
@@ -259,25 +259,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             </circle>
           </svg>
 
-          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Replaced manual product lookups with fast, filtered search for internal ops teams</span>
-            <span className="text-amber-400 font-semibold">NODE.JS + POSTGRESQL</span>
+          <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Replaced manual product lookups with fast, filtered search for internal ops teams</span>
+            <span className="text-amber-400 font-semibold shrink-0">NODE.JS + POSTGRESQL</span>
           </div>
         </div>
       );
 
     case "betterearth":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              BETTEREARTH // UI REDESIGN & FIREBASE DATA MIGRATION
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span className="truncate">BETTEREARTH // UI REDESIGN & FIREBASE DATA MIGRATION</span>
             </span>
-            <span className="text-emerald-400/90 text-[10px]">PRODUCTION MIGRATION</span>
+            <span className="text-emerald-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">PRODUCTION MIGRATION</span>
           </div>
 
-          <svg viewBox="0 0 600 200" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 200" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(30, 70)">
               <rect width="130" height="55" rx="8" fill="#0f172a" stroke="#64748b" strokeWidth="1.5" />
               <text x="65" y="24" fill="#cbd5e1" fontSize="9.5" textAnchor="middle" fontWeight="bold">EXISTING PRODUCT</text>
@@ -300,25 +300,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             <path d="M 345 97 L 390 97" stroke="#10b981" strokeWidth="2" />
           </svg>
 
-          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-500">
-            <span>UI redesign, admin panel rebuild, and Firebase data migration for an existing production product</span>
-            <span className="text-emerald-400 font-semibold">REACT & FIREBASE</span>
+          <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">UI redesign, admin panel rebuild, and Firebase data migration for an existing production product</span>
+            <span className="text-emerald-400 font-semibold shrink-0">REACT & FIREBASE</span>
           </div>
         </div>
       );
 
     case "renner-otto":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              RENNER OTTO // ELECTRON-BASED DESKTOP APP
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse shrink-0" />
+              <span className="truncate">RENNER OTTO // ELECTRON-BASED DESKTOP APP</span>
             </span>
-            <span className="text-blue-400/90 text-[10px]">LEGAL CASE & ATTORNEY MANAGEMENT</span>
+            <span className="text-blue-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">LEGAL CASE & ATTORNEY MANAGEMENT</span>
           </div>
 
-          <svg viewBox="0 0 600 200" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 200" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(30, 70)">
               <rect width="135" height="55" rx="8" fill="#0f172a" stroke="#3b82f6" strokeWidth="1.5" />
               <text x="67" y="24" fill="#93c5fd" fontSize="9.5" textAnchor="middle" fontWeight="bold">ELECTRON DESKTOP UI</text>
@@ -341,25 +341,25 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             <path d="M 340 97 L 385 97" stroke="#8b5cf6" strokeWidth="2" />
           </svg>
 
-          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Electron-based desktop application for legal case and attorney management</span>
-            <span className="text-blue-400 font-semibold">ELECTRON.JS</span>
+          <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Electron-based desktop application for legal case and attorney management</span>
+            <span className="text-blue-400 font-semibold shrink-0">ELECTRON.JS</span>
           </div>
         </div>
       );
 
     case "triptop":
       return (
-        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-6 font-mono overflow-hidden ${className}`}>
-          <div className="flex items-center justify-between pb-4 border-b border-slate-800/80 text-[11px] text-slate-400">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
-              TRIPTOP // CHROME EXTENSION & WORKFLOW AUTOMATION
+        <div className={`relative w-full rounded-xl bg-slate-950/90 border border-slate-800/80 p-3.5 sm:p-5 lg:p-6 font-mono overflow-hidden max-w-full ${className}`}>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 sm:pb-4 border-b border-slate-800/80 text-[10px] sm:text-[11px] text-slate-400 gap-1.5 sm:gap-2">
+            <span className="flex items-center gap-2 truncate">
+              <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse shrink-0" />
+              <span className="truncate">TRIPTOP // CHROME EXTENSION & WORKFLOW AUTOMATION</span>
             </span>
-            <span className="text-orange-400/90 text-[10px]">MULTI-DESTINATION SEARCH</span>
+            <span className="text-orange-400/90 text-[9px] sm:text-[10px] shrink-0 font-semibold">MULTI-DESTINATION SEARCH</span>
           </div>
 
-          <svg viewBox="0 0 600 200" className="w-full h-auto mt-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 600 200" className="w-full h-auto mt-3 sm:mt-4 max-w-full overflow-hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(30, 70)">
               <rect width="130" height="55" rx="8" fill="#0f172a" stroke="#f97316" strokeWidth="1.5" />
               <text x="65" y="24" fill="#fdba74" fontSize="9.5" textAnchor="middle" fontWeight="bold">CHROME EXTENSION</text>
@@ -382,9 +382,9 @@ export const ProjectArchitectureDiagram: React.FC<ProjectArchitectureDiagramProp
             <path d="M 340 97 L 385 97" stroke="#eab308" strokeWidth="2" />
           </svg>
 
-          <div className="mt-2 flex items-center justify-between text-[10px] text-slate-500">
-            <span>Shipped automation, multi-destination search, and lazy-loading for travel use cases</span>
-            <span className="text-orange-400 font-semibold">CHROME EXTENSION APIS</span>
+          <div className="mt-2 flex flex-col sm:flex-row sm:items-center justify-between text-[9px] sm:text-[10px] text-slate-500 gap-1.5 sm:gap-2">
+            <span className="leading-normal">Shipped automation, multi-destination search, and lazy-loading for travel use cases</span>
+            <span className="text-orange-400 font-semibold shrink-0">CHROME EXTENSION APIS</span>
           </div>
         </div>
       );
